@@ -31,7 +31,6 @@ This framework provides a simple and repeatable way to:
 - Access to a foundation model API or a local model  
 
 
-```markdown
 ### Quick example
 
 ```python
@@ -56,3 +55,34 @@ scenario = runner.run(
 # Save output
 scenario.to_json("output/synthetic_logs.json")
 scenario.to_manifest("output/manifest.json")
+```
+### Example scenarios
+
+- `timestamp_drift.yaml` introduces gradual or sudden timestamp offsets to test correlation logic  
+- `identity_shift.yaml` adjusts identity fields such as usernames or hostnames  
+- `field_missingness.yaml` removes optional fields to test parser resilience  
+
+### Status
+
+The project is under initial development. The current milestone includes:
+
+- `JSON` log loader  
+- `Schema` validation  
+- Foundation model event generator  
+- Timestamp drift and identity shift perturbations  
+- `YAML` scenario configuration  
+- Basic reporting and sanity checks  
+
+### Contributing
+
+Contributions and feature requests are welcome. Areas that would be especially helpful include:
+
+- New perturbation types such as event reordering or volume spikes  
+- Connectors for platform specific ingestion workflows  
+- Additional evaluation metrics  
+- More sample schemas or seed datasets  
+
+### License
+
+MIT
+
