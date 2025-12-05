@@ -1,0 +1,11 @@
+name: windows_signin_drift
+description: Simple drift scenario for Windows sign-in events
+perturbations:
+  - name: timestamp_drift
+    params:
+      field: "@timestamp"
+      max_offset_minutes: 15
+  - name: identity_shift
+    params:
+      fields: ["user"]
+      suffix_pool: ["_win", "_remote"]

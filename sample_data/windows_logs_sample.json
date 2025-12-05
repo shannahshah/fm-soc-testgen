@@ -1,0 +1,8 @@
+[
+  {
+    "@timestamp": "2025-01-01T00:00:00Z",
+    "event_id": 4624,
+    "user": "alice",
+    "host": "win-host-01"
+  }
+]
