@@ -30,6 +30,8 @@ This framework provides a simple and repeatable way to:
 - Standard Python packages such as `openai`, `pyyaml`, and `pydantic`  
 - Access to a foundation model API or a local model  
 
+
+```markdown
 ### Quick example
 
 ```python
